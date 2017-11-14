@@ -1,3 +1,6 @@
+## Highest and Lowest
+A code wars kata that returns the highest and lowest  number in a string.
+
 ```javascript
 function highAndLow(numbers){
 const array = numbers.split(' ')
