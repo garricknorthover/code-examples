@@ -1,5 +1,5 @@
 ## Highest and Lowest
-A code wars kata that returns the highest and lowest  number in a string.
+A code wars kata. The function returns the highest and lowest number in a given string.
 
 ```javascript
 function highAndLow(numbers){
