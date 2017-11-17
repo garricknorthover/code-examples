@@ -4,7 +4,7 @@ A code wars kata that find the index where the sum of the numbers on the left ar
 
 ```javascript
 function findEvenIndex(array) {
-    /**find sum total off array */
+    /**find sum total of array */
     const sum = array.reduce((x, y) => x + y, 0);
     
     /** running total while iterating through array */
@@ -23,8 +23,9 @@ function findEvenIndex(array) {
     /** if nothing found return -1 */
     return -1
 }
+```
 
-
+```javascript
 findEvenIndex([1,2,3,4,3,2,1]) // 3
 findEvenIndex([1,100,50,-51,1,1])// 1
 findEvenIndex([1,2,3,4,5,6]) // -1
