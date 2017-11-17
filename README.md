@@ -1,4 +1,38 @@
+## Equal Sides Of An Array
+
+A code wars kata that find the index where the sum of the numbers on the left are equal to the sum of the numbers on the right.
+
+```javascript
+function findEvenIndex(array) {
+    /**find sum total off array */
+    const sum = array.reduce((x, y) => x + y, 0);
+    
+    /** running total while iterating through array */
+    let accumulator = 0;
+    for (let i=0; i<= array.length; i++) {
+       
+        /** test if left and right of present index are equal  */        
+        if (accumulator == (sum - array[i]) / 2) {
+
+            /** return index of array when this condition was met */
+            return i            
+        }
+        
+        accumulator += array[i];
+    }
+    /** if nothing found return -1 */
+    return -1
+}
+
+
+findEvenIndex([1,2,3,4,3,2,1]) // 3
+findEvenIndex([1,100,50,-51,1,1])// 1
+findEvenIndex([1,2,3,4,5,6]) // -1
+findEvenIndex([20,10,30,10,10,15,35]) // 3
+```
+
 ## Highest and Lowest
+
 A code wars kata. The function returns the highest and lowest number in a given string.
 
 ```javascript
