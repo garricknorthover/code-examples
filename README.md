@@ -32,6 +32,28 @@ findEvenIndex([1,2,3,4,5,6]) // -1
 findEvenIndex([20,10,30,10,10,15,35]) // 3
 ```
 
+##Square Every Diget
+
+Take every diget and square it and then join together
+
+```javascript
+function squareDigits(num){
+  const str = num
+     .toString()
+     .split('')
+     .map(x => (x * x)) 
+     .join('')
+     
+     const result = parseInt(str, 10)
+     
+     return result    
+     }
+     ```
+     ```javascript
+     squareDigits(9119), 811181
+     ```
+
+
 ## Highest and Lowest
 
 A code wars kata. The function returns the highest and lowest number in a given string.
