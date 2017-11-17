@@ -32,7 +32,7 @@ findEvenIndex([1,2,3,4,5,6]) // -1
 findEvenIndex([20,10,30,10,10,15,35]) // 3
 ```
 
-##Square Every Diget
+## Square Every Diget
 
 Take every diget and square it and then join together
 
