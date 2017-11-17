@@ -48,10 +48,10 @@ function squareDigits(num){
      
      return result    
      }
-     ```
-     ```javascript
+```
+```javascript
      squareDigits(9119), 811181
-     ```
+```
 
 
 ## Highest and Lowest
