@@ -87,3 +87,8 @@ function longest(s1, s2) {
   return result
 }
 ```
+
+```javascript
+longest("loopingisfunbutdangerous", "lessdangerousthancoding") //returns "abcdefghilnoprstu"
+longest("inmanylanguages", "theresapairoffunctions") //returns "acefghilmnoprstuy"
+```
