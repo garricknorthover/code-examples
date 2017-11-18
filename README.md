@@ -32,9 +32,9 @@ findEvenIndex([1,2,3,4,5,6]) // returns -1
 findEvenIndex([20,10,30,10,10,15,35]) // returns 3
 ```
 
-## Square Every Diget
+## Square Every Digit
 
-Take every diget and square it and then join together
+Take every digit and square it and then join together
 
 ```javascript
 function squareDigits(num){
