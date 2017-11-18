@@ -4,25 +4,23 @@ A code wars kata that find the index where the sum of the numbers on the left ar
 
 ```javascript
 function findEvenIndex(array) {
-    /**find sum total of array */
     const sum = array.reduce((x, y) => x + y, 0);
-    
-    /** running total while iterating through array */
     let accumulator = 0;
-    for (let i=0; i<= array.length; i++) {
-       
-        /** test if left and right of present index are equal  */        
+    for (let i = 0; i <= array.length; i++) {
         if (accumulator == (sum - array[i]) / 2) {
-
-            /** return index of array when this condition was met */
-            return i            
+            return i
         }
-        
         accumulator += array[i];
     }
-    /** if nothing found return -1 */
     return -1
 }
+
+/** The reduce method is used to find the sum of the array
+ * The next pass of the array is accumulated as it iterates.
+ * The condition is met when the accumulator is half of the sum 
+ * after the present iteration value is taken away from the sum
+ * The final return of -1 is if the condition is never met
+ */
 ```
 
 ```javascript
