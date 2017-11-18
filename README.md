@@ -71,3 +71,19 @@ highAndLow("1 2 3 4 5"); // return "5 1"
 highAndLow("1 2 -3 4 5"); // return "5 -3"
 highAndLow("1 9 3 4 -5"); // return "9 -5"
 ```
+
+## The Longest
+
+Take 2 strings s1 and s2 including only letters from a to z. Return a new sorted string, the longest possible, containing distinct letters.
+
+```javascript
+function longest(s1, s2) {
+  const result = (s1 + s2)
+    .split('')
+    .filter((el, pos, arr) => arr.indexOf(el) == pos)
+    .sort()
+    .join('')
+
+  return result
+}
+```
