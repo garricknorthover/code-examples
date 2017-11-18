@@ -30,6 +30,34 @@ findEvenIndex([1,2,3,4,5,6]) // returns -1
 findEvenIndex([20,10,30,10,10,15,35]) // returns 3
 ```
 
+## Exes and Ohs
+
+```javascript
+function XO(str) {
+    let result = str
+        .toLowerCase()
+        .split('')
+        .reduce((x, y) => {
+            if (y == 'x') {
+                x++
+            }
+            if (y == 'o') {
+                x--
+            }
+            return x
+        }, 0)
+
+    return result == 0 ? true : false
+}
+```
+```javascript
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false
+```
+
 ## Square Every Digit
 
 Take every digit and square it and then join together
