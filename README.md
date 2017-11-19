@@ -30,6 +30,40 @@ findEvenIndex([1,2,3,4,5,6]) // returns -1
 findEvenIndex([20,10,30,10,10,15,35]) // returns 3
 ```
 
+## Calculate with functions
+
+```javascript
+function zero(num)     { return num ? num(0) : 0 }
+function one(num)      { return num ? num(1) : 1 }
+function two(num)      { return num ? num(2) : 2 }
+function three(num)    { return num ? num(3) : 3 }
+function four(num)     { return num ? num(4) : 4 }
+function five(num)     { return num ? num(5) : 5 }
+function six(num)      { return num ? num(6) : 6 }
+function seven(num)    { return num ? num(7) : 7 }
+function eight(num)    { return num ? num(8) : 8 }
+function nine(num)     { return num ? num(9) : 9 }
+
+function plus(x)        { return function(y) { return y + x }}
+function minus(x)       { return function(y) { return y - x }}
+function times(x)       { return function(y) { return y * x }}
+function dividedBy(x)   { return function(y) { return y / x }}
+
+/**
+ * A Codewars kata that uses functions to calculate 2 numbers.
+ * The right operand returns a number to the operator which in turn returns a 
+ * curried function to the right operand.
+ * While this example is not DRY, and I could have tried putting the numbers into an array
+ * I think it is more readable this way.
+ */
+ ```
+ ```javascript
+ seven(times(five())); // returns 35
+four(plus(nine())); // returns 13
+eight(minus(three())); // returns 5
+six(dividedBy(two())); // returns 3
+```
+
 ## Exes and Ohs
 
 ```javascript
