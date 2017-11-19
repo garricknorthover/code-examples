@@ -52,7 +52,7 @@ function dividedBy(x)   { return function(y) { return y / x }}
 /**
  * A Codewars kata that uses functions to calculate 2 numbers.
  * The right operand returns a number to the operator which in turn returns a 
- * curried function to the right operand.
+ * curried function to the left operand.
  * While this example is not DRY, and I could have tried putting the numbers into an array
  * I think it is more readable this way.
  */
