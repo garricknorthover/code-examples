@@ -56,9 +56,9 @@ function dividedBy(x)   { return function(y) { return y / x }}
  * While this example is not DRY, and I could have tried putting the numbers into an array
  * I think it is more readable this way.
  */
- ```
- ```javascript
- seven(times(five())); // returns 35
+```
+```javascript
+seven(times(five())); // returns 35
 four(plus(nine())); // returns 13
 eight(minus(three())); // returns 5
 six(dividedBy(two())); // returns 3
