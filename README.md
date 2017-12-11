@@ -63,7 +63,21 @@ four(plus(nine())); // returns 13
 eight(minus(three())); // returns 5
 six(dividedBy(two())); // returns 3
 ```
+## Password Validation
 
+```javascript
+function validatePIN (pin) {
+    return /^\d\d\d\d$/.test(pin) || /^\d\d\d\d\d\d$/.test(pin)
+   }
+```
+## Extract the domain name from a URL
+
+```javascript
+    function domainName(url) {
+        const out = url.replace(/(www.)|(https)|(http)|(:\/\/)/g, '').split('.')
+        return out[0]
+    }
+```
 ## Exes and Ohs
 
 ```javascript
