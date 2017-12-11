@@ -76,7 +76,7 @@ function validatePIN (pin) {
     function domainName(url) {
         const out = url.replace(/(www.)|(https)|(http)|(:\/\/)/g, '').split('.')
         return out[0]
-        }
+    }
 ```
 ## Exes and Ohs
 
