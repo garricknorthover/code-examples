@@ -166,3 +166,11 @@ function longest(s1, s2) {
 longest("loopingisfunbutdangerous", "lessdangerousthancoding") //returns "abcdefghilnoprstu"
 longest("inmanylanguages", "theresapairoffunctions") //returns "acefghilmnoprstuy"
 ```
+
+## Return the nth triangular number
+
+```ruby
+def triangular( n )
+  n > 0 ? (1..n).reduce(:+) : 0
+end
+```
